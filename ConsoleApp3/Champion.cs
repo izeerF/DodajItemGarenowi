@@ -16,9 +16,18 @@ namespace LolClasses
         public string name;
         // maksymalne hp
         public float hp;
+        public float maxHp;
         public float ad;
+        public float ap;
+        public float mana;
+        public float maxMana;
         //tablica zawierajaca kupione itemy
         public Item[] items;
+        public enum ccType{
+            slow,
+            stun,
+            statis
+        }
 
         /*
          * Konstruktor 
@@ -29,7 +38,11 @@ namespace LolClasses
             name = "";
             //domyslne hp = 0 z tego samego powodu
             hp = 0;
+            maxHp = 0;
             ad = 0;
+            ap = 0;
+            mana = 0;
+            maxMana = 0;
             //zainicjuj tablice na 
             items = new Item[6];
             //wyświetl komunikat

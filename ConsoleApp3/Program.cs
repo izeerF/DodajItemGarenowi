@@ -2,6 +2,7 @@
 
 //stwórz nowego champa - garena
 Garen g = new Garen();
+Bard b = new Bard();
 //opdal emotke dla garena
 g.ctrl3();
 
@@ -21,6 +22,7 @@ g.buyItem(rb);
 g.showHP();
 g.buyItem(bfs);
 g.showAD();
+b.Q(g);
 
 
 

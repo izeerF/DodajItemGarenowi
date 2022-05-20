@@ -20,6 +20,7 @@ namespace LolClasses
             name = "Garen";
             //ustaw poczatkowe hp
             hp = 620;
+            maxHp = 620;
             ad = 66;
             //wyświetl komunikat
             Console.WriteLine("Konstruktor klasy Garen");
