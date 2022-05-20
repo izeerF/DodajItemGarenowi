@@ -8,6 +8,7 @@ g.ctrl3();
 
 //stworz instacje przedmiotu - rubycrystal
 RubyCrystal rb = new RubyCrystal();
+Rabadon rd = new Rabadon();
 BFSword bfs = new BFSword();
 //sprawdz ile ma hp garen
 g.showHP();
@@ -22,6 +23,8 @@ g.buyItem(rb);
 g.showHP();
 g.buyItem(bfs);
 g.showAD();
+b.buyItem(rd);
+b.showAP();
 b.Q(g);
 
 

@@ -20,8 +20,13 @@ namespace LolClasses
             maxMana = 1200;
         }
         public void Q(Champion enemy)
-        {
+        { 
             float manaCost = 60;
+            if (mana < manaCost)
+            {
+                Console.WriteLine("bard nie ma wystarczajaca many");
+                return;
+            }
             float md = 260 + ap * 0.65f;
             float cd = 7;
             float ccDuration = 1.8f;
@@ -35,6 +40,11 @@ namespace LolClasses
         public void W(Champion ally)
         {
             float manaCost = 70;
+            if (mana < manaCost)
+            {
+                Console.WriteLine("bard nie ma wystarczajaca many");
+                return;
+            }
             float cd = 14;
             float healAmount = 150 + ap * 0.3f;
             mana = mana - manaCost;
@@ -42,12 +52,22 @@ namespace LolClasses
         public void E()
         {
             float manaCost = 30;
+            if (mana < manaCost)
+            {
+                Console.WriteLine("bard nie ma wystarczajaca many");
+                return;
+            }
             float cd = 16;
             mana = mana - manaCost;
         }
         public void R(Champion enemy)
         {
             float manaCost = 100;
+            if (mana < manaCost) 
+            {
+                Console.WriteLine("bard nie ma wystarczajaca many");
+                return;
+            }
             float cd = 80;
             float ccDuration = 2.5f;
             ccType cc = ccType.statis;

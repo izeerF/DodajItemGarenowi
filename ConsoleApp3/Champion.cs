@@ -82,6 +82,10 @@ namespace LolClasses
         {
             Console.WriteLine("Postać ma " + this.getAD().ToString() + "AD");
         }
+        public void showAP()
+        {
+            Console.WriteLine("Postać ma " + this.getAP().ToString() + "AP");
+        }
         public float getHP()
         {
             //pobierz bazowe i dodaj z itemów;
@@ -104,6 +108,18 @@ namespace LolClasses
                     finalAd += items[i].GetStat(Stat.AD);
             }
             return finalAd;
+
+        }
+        public float getAP()
+        {
+            //pobierz bazowe i dodaj z itemów;
+            float finalAp = ap;
+            for (int i = 0; i < items.Length; i++)
+            {
+                if (items[i] != null)
+                    finalAp += items[i].GetStat(Stat.AP);
+            }
+            return finalAp;
 
         }
     }

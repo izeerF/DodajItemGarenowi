@@ -19,9 +19,12 @@ namespace LolClasses
             //przypisz imie
             name = "Garen";
             //ustaw poczatkowe hp
-            hp = 620;
-            maxHp = 620;
-            ad = 66;
+            hp = 2282;
+            maxHp = 2282;
+            ad = 149;
+            ap = 0;
+            mana = 900;
+            maxMana = 900;
             //wyświetl komunikat
             Console.WriteLine("Konstruktor klasy Garen");
         }
